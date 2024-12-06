@@ -1,17 +1,17 @@
 // TODO Add functionality for drawing shapes
-function drawShape(length) {
-    let rowOfShape = "";
-    for (let shapeCount = 0; shapeCount < length; shapeCount++) {
-      rowOfShape = rowOfShape + "*";
+function drawLineOfStars(length) {
+    let rowOfStars = "";
+    for (let starCount = 0; starCount < length; starCount++) {
+      rowOfStars = rowOfStars + "*";
     }
-    console.log(rowOfShape)
+    console.log(rowOfStars)
   }
   
-  function drawShapeWithHeight(height) {
+  function drawTriangleWithHeight(height) {
     for (let rowCount = 1; rowCount < height + 1; rowCount++) {
-      drawShape(rowCount)
+      drawLineOfStars(rowCount)
     }
   }
   
-  drawShapeWithHeight(5)
+  drawTriangleWithHeight(5)
   
