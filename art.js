@@ -13,6 +13,15 @@ function drawLineOfStars(length) {
   console.log(rowOfStars)
 }
 
-drawTriangleWithHeight(5)
+drawTriangleWithHeight()
 
-  
+function drawPyramid(rows){
+    for (let i = 0; i < rows; i++) {
+        let output = ''; // For every each counter there exist 2*rows-1 value
+        for (let j = 0; j < rows - i; j++) output += ' ';
+        for (let k = 0; k <= i; k++) output += '* ';
+        console.log(output);  
+    } 
+}
+
+drawPyramid()
