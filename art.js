@@ -40,3 +40,19 @@ function drawInvertedPyramid(rows){
 }
 
 drawInvertedPyramid(5)
+
+function square(rows) {
+  for (let i = 0; i < rows; i++) {
+    let row = '';
+    
+    // Add stars for the row
+    for (let j = 0; j < rows; j++) {
+      row += '*';
+    }
+
+    console.log(row);
+  }
+}
+
+// Call the function with the desired number of rows
+square(5);
