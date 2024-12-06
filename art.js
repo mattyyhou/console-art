@@ -1,13 +1,13 @@
 // TODO Add functionality for drawing shapes
 function drawTriangleWithHeight(height) {
-  for (let rowCount = 0; rowCount < height; rowCount++) {
+  for (let rowCount = 0; rowCount < height; rowCount++) { //Outer loop
     drawLineOfStars(rowCount)
   }
 }
 
 function drawLineOfStars(length) {
   let rowOfStars = '*'
-  for (let starCount = 0; starCount < length; starCount++) {
+  for (let starCount = 0; starCount < length; starCount++) { // Add stars
     rowOfStars = rowOfStars + '*'
   }
   console.log(rowOfStars)
@@ -17,9 +17,9 @@ drawTriangleWithHeight(5)
 
 function drawPyramid(rows){
     for (let i = 0; i < rows; i++) {
-        let row = ''; // For every each counter there exist 2*rows-1 value
-        for (let j = 0; j < rows - i; j++) row += ' ';
-        for (let k = 0; k <= i; k++) row += '* ';
+        let row = ''; 
+        for (let j = 0; j < rows - i; j++) row += ' '; // Add leading spaces
+        for (let k = 0; k <= i; k++) row += '* '; // Add stars
         console.log(row);  
     } 
 }
@@ -29,12 +29,8 @@ drawPyramid(5)
 function drawInvertedPyramid(rows){
   for (let i = 0; i < rows; i++) {
       let row = '';
-      for (let j = 0; j < i; j++) {
-        row += ' ';
-      }
-      for (let k = 0; k < rows - i; k++) {
-        row += '* ';
-      }
+      for (let j = 0; j < i; j++) row += ' '; // Add leading spaces
+      for (let k = 0; k < rows - i; k++) row += '* '; // Add stars
       console.log(row);  
   } 
 }
@@ -42,6 +38,7 @@ function drawInvertedPyramid(rows){
 drawInvertedPyramid(5)
 
 function square(rows) {
+  //outer loop
   for (let i = 0; i < rows; i++) {
     let row = '';
     
@@ -54,5 +51,4 @@ function square(rows) {
   }
 }
 
-// Call the function with the desired number of rows
 square(5);
