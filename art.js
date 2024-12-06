@@ -13,15 +13,30 @@ function drawLineOfStars(length) {
   console.log(rowOfStars)
 }
 
-drawTriangleWithHeight()
+drawTriangleWithHeight(5)
 
 function drawPyramid(rows){
     for (let i = 0; i < rows; i++) {
-        let output = ''; // For every each counter there exist 2*rows-1 value
-        for (let j = 0; j < rows - i; j++) output += ' ';
-        for (let k = 0; k <= i; k++) output += '* ';
-        console.log(output);  
+        let row = ''; // For every each counter there exist 2*rows-1 value
+        for (let j = 0; j < rows - i; j++) row += ' ';
+        for (let k = 0; k <= i; k++) row += '* ';
+        console.log(row);  
     } 
 }
 
-drawPyramid()
+drawPyramid(5)
+
+function drawInvertedPyramid(rows){
+  for (let i = 0; i < rows; i++) {
+      let row = '';
+      for (let j = 0; j < i; j++) {
+        row += ' ';
+      }
+      for (let k = 0; k < rows - i; k++) {
+        row += '* ';
+      }
+      console.log(row);  
+  } 
+}
+
+drawInvertedPyramid(5)
