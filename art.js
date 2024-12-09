@@ -45,3 +45,4 @@ function square(rows) {
   }
 }
 
+module.exports = { drawTriangleWithHeight, drawPyramid, drawInvertedPyramid, square }
