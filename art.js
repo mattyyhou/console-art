@@ -13,8 +13,6 @@ function drawLineOfStars(length) {
   console.log(rowOfStars)
 }
 
-drawTriangleWithHeight(5)
-
 function drawPyramid(rows){
     for (let i = 0; i < rows; i++) {
         let row = ''; 
@@ -24,8 +22,6 @@ function drawPyramid(rows){
     } 
 }
 
-drawPyramid(5)
-
 function drawInvertedPyramid(rows){
   for (let i = 0; i < rows; i++) {
       let row = '';
@@ -34,8 +30,6 @@ function drawInvertedPyramid(rows){
       console.log(row);  
   } 
 }
-
-drawInvertedPyramid(5)
 
 function square(rows) {
   //outer loop
@@ -51,4 +45,3 @@ function square(rows) {
   }
 }
 
-square(5);
