@@ -1,9 +1,9 @@
-const { askForShape, askForDimension } = require('./input') 
-const { drawTriangleWithHeight, drawPyramid, drawInvertedPyramid, square } = require('./art')
+const { askForShape, askForDimension } = require('./input');
+const { drawTriangleWithHeight, drawPyramid, drawInvertedPyramid, square } = require('./art');
 
 async function main() {
-    const shape = await askForShape()
-    const dimension = await askForDimension()
+    const shape = await askForShape();
+    const dimension = await askForDimension();
 
     // TODO Use input to draw shapes
 if  (shape === 'square') {
